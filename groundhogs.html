@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Groundhogs hiding in a hole</title>
+
+	<!-- Around 25 lines of code or so -->
+	<!-- Fulfills the interaction requirement -->
+
+	<style>
+		/* CSS STARTS COUNTING HERE */
+		.hole {
+			width: 400px;
+			height: 400px;
+			background-color: black;
+			border-radius: 50%;
+			overflow: hidden;
+			position: absolute;
+			top: 100px;
+			left: 100px;
+		}
+		.groundhog {
+			width: 200px;
+			position: absolute;
+			top: 100%;
+			left: 100px;
+			transition: 1s;
+		}
+		.hole:hover .groundhog {
+			transform: translateY(-100%);
+		}
+		/* CSS ENDS HERE */
+	</style>
+</head>
+<body>
+	<!-- HTML STARTS COUNTING HERE -->
+	<div class="hole">
+		<img src="https://cdn.mos.cms.futurecdn.net/SUTw8fnq2Ydjnb23CVQN67-1200-80.jpg" class="groundhog">
+	</div>
+	<!-- HTML ENDS HERE -->
+</body>
+</html>
